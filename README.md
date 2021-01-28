@@ -4,7 +4,7 @@ Add it to your Discord server:
 https://discord.com/api/oauth2/authorize?client_id=804076437987393547&permissions=3072&scope=bot  
 
 The job of the bot is to dispatch FNM codes to the users who submitted screenshots in the given channel.  
-Command the bot by sending it a private message as detailed below.
+Command the bot by sending it a private message as detailed below.  
 
 
 # usage
@@ -15,7 +15,7 @@ Command the bot by sending it a private message as detailed below.
 <code_2>  
 <code_3>  
 ...  
-\* can be copied by right-clcicking the channel icon in Discord if Developer Mode is enabled (User Settings > Appearance > Advanced)
+\* can be copied by right-clcicking the channel icon in Discord if Developer Mode is enabled (User Settings > Appearance > Advanced)  
 
 
 # example
