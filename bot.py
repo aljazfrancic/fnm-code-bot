@@ -55,7 +55,7 @@ async def on_message(message):
                         await message.channel.send("Ran out of codes for " + member.name + "!")
                     else:
                         await member.create_dm()
-                        await member.dm_channel.send("`" + fnmcodes[i] "`")
+                        await member.dm_channel.send("`" + fnmcodes[i] + "`")
                         await message.channel.send("Code `" + fnmcodes[i] + "` sent to " + member.name + "!")
                 await chan.send("Kode so bile poslane!")
                 break
