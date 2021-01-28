@@ -1,5 +1,6 @@
 # fnm-code-bot
 This is the Magic the Gathering Arena FNM code dispatcher for Discord.
+https://discord.com/api/oauth2/authorize?client_id=804076437987393547&permissions=3072&scope=bot
 
 # usage
 !fnm-code-bot-deploy
