@@ -1,15 +1,20 @@
 # fnm-code-bot
-This is the Magic the Gathering Arena FNM code dispatcher for Discord.  
+This is the Magic the Gathering Arena Friday Night Magic code dispatcher bot for Discord.  
+Add it to your Discord server:  
 https://discord.com/api/oauth2/authorize?client_id=804076437987393547&permissions=3072&scope=bot  
+
+The job of the bot is to dispatch FNM codes to users who submitted screenshots in the given channel.  
+
 
 # usage
 !fnm-code-bot-deploy  
-<guild_id>  
-<channel_name>  
+<guild_id> ... the target guild (server id), can be copied by right-clcicking the channel icon in Discord if Developer Mode is enabled (USer SEttings > Appearance > Advanced)
+<channel_name> ... the given channel name  
 <code_1>  
 <code_2>  
 <code_3>  
 ...  
+
 
 # example
 !fnm-code-bot-deploy  
