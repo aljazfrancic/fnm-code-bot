@@ -13,7 +13,7 @@ https://discord.com/api/oauth2/authorize?client_id=804076437987393547&permission
 
 # example
 !fnm-code-bot-deploy
-804097685871132702
+691942331091517530
 fnm-29-1
 CD93F-8646D-6F115-963D0-09D89
 CD94E-20E70-DC9DF-E2537-BAB9C
