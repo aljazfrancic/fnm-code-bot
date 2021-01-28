@@ -3,7 +3,7 @@ This is the Magic the Gathering Arena FNM code dispatcher for Discord.
 
 # usage
 !fnm-code-bot-deploy
-<guild-_id>
+<guild_id>
 <channel_name>
 <code_1>
 <code_2>
