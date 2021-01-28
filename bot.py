@@ -24,10 +24,10 @@ async def on_message(message):
         
         input = message.content.split()
         
-        #MTG Slovenia Discord guild id
+        #MTG Slovenija guild id
         #691942331091517530
         
-        #commander guild id
+        #Commander guild id
         #760280589244563487
         
         #sad-bot's sad server guild id
