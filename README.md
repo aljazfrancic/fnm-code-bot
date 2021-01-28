@@ -15,7 +15,7 @@ Command the bot by sending it a private message as detailed below.
 <code_2>  
 <code_3>  
 ...  
-\* can be copied by right-clcicking the server icon in Discord if Developer Mode is enabled (User Settings > Appearance > Advanced)  
+\* can be copied by right-clicking the server icon in Discord if Developer Mode is enabled (User Settings > Appearance > Advanced)  
 
 
 # example
