@@ -35,9 +35,9 @@ async def on_message(message):
         
         guild_id = input[1]
         target_channel = input[2]
-        fnmcodes = input[3:]
+        fnm_codes = input[3:]
         
-        print(guild_id, target_channel, fnmcodes)
+        print(guild_id, target_channel, fnm_codes)
         
         guild = client.get_guild(int(guild_id))
         
@@ -51,12 +51,12 @@ async def on_message(message):
                 senders = list(set(senders))
                 senders.reverse()
                 for i, member in enumerate(senders):
-                    if i >= len(fnmcodes):
+                    if i >= len(fnm_codes):
                         await message.channel.send("Ran out of codes for " + member.name + "!")
                     else:
                         await member.create_dm()
-                        await member.dm_channel.send("`" + fnmcodes[i] + "`")
-                        await message.channel.send("Code `" + fnmcodes[i] + "` sent to " + member.name + "!")
+                        await member.dm_channel.send("`" + fnm_codes[i] + "`")
+                        await message.channel.send("Code `" + fnm_codes[i] + "` sent to " + member.name + "!")
                 await chan.send("Kode so bile poslane!")
                 break
                 
