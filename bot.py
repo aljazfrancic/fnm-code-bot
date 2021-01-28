@@ -9,6 +9,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
+    await client.change_presence(activity = discord.Game("Casting some Colossal Dreadmaws."))
     print(str(client.user) + " reporting for duty!")
     #print(str(client.guilds))
     #for guild in client.guilds:
