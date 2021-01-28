@@ -57,7 +57,7 @@ async def on_message(message):
                         await member.create_dm()
                         await member.dm_channel.send("`" + fnm_codes[i] + "`")
                         await message.channel.send("Code `" + fnm_codes[i] + "` sent to " + member.name + "!")
-                await chan.send("Kode so bile poslane!")
+                await chan.send("The FNM Arena codes have been sent out!")
                 break
                 
 client.run(TOKEN)
