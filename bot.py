@@ -36,7 +36,7 @@ async def on_message(message):
         guild_id = input[1]
         target_channel = input[2]
         fnm_codes = input[3:]
-        report = guild_id + "\n" + target_channel + "\n" + fnm_codes + "\n"
+        report = guild_id + "\n" + target_channel + "\n" + str(fnm_codes) + "\n"
         
         guild = client.get_guild(int(guild_id))
         
