@@ -52,12 +52,18 @@ async def on_message(message):
                 senders.reverse()
                 for i, member in enumerate(senders):
                     if i >= len(fnm_codes):
-                        await message.channel.send("Ran out of codes for " + member.name + "!")
+                        msg = "Ran out of codes for " + member.name + "!"
+                        await message.channel.send(msg)
+                        print(msg)
                     else:
                         await member.create_dm()
                         await member.dm_channel.send("`" + fnm_codes[i] + "`")
-                        await message.channel.send("Code `" + fnm_codes[i] + "` sent to " + member.name + "!")
-                await chan.send("The FNM Arena codes have been sent out!")
+                        msg = "Code `" + fnm_codes[i] + "` sent to " + member.name + "!"
+                        await message.channel.send(msg)
+                        print(msg)
+                msg = "The FNM Arena codes have been sent out!"
+                await chan.send(msg)
+                print(msg)
                 break
                 
 client.run(TOKEN)
