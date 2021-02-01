@@ -36,7 +36,7 @@ async def on_message(message):
         guild_id = input[1]
         target_channel = input[2]
         fnm_codes = input[3:]
-        report = guild_id + "\n" + target_channel + "\n" + str(fnm_codes) + "\n"
+        print(guild_id, target_channel)
         
         guild = client.get_guild(int(guild_id))
         
@@ -53,17 +53,16 @@ async def on_message(message):
                     if i >= len(fnm_codes):
                         msg = "Ran out of codes for " + member.name + "!"
                         await message.channel.send(msg)
-                        report += msg + "\n"
+                        print(msg)
                     else:
                         await member.create_dm()
                         await member.dm_channel.send("`" + fnm_codes[i] + "`")
                         msg = "Code `" + fnm_codes[i] + "` sent to " + member.name + "!"
                         await message.channel.send(msg)
-                        report += msg + "\n"
+                        print(msg)
                 msg = "The FNM Arena codes have been sent out!"
                 await chan.send(msg)
-                report += msg + "\n"
-                print(report)
+                print(fnm_codes)
                 break
                 
 client.run(TOKEN)
