@@ -47,7 +47,8 @@ async def on_message(message):
                 for post in posts:
                     if post.attachments:
                         senders.append(post.author)
-                senders = list(set(senders))
+                leset = set(senders)
+                senders = list(leset)
                 senders.reverse()
                 for i, member in enumerate(senders):
                     if i >= len(fnm_codes):
@@ -64,6 +65,7 @@ async def on_message(message):
                 await chan.send(msg)
                 print(fnm_codes)
                 print(senders)
+                print(leset)
                 break
                 
 client.run(TOKEN)
