@@ -63,6 +63,7 @@ async def on_message(message):
                 msg = "The FNM Arena codes have been sent out!"
                 await chan.send(msg)
                 print(fnm_codes)
+                print(senders)
                 break
                 
 client.run(TOKEN)
