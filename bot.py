@@ -43,11 +43,11 @@ async def on_message(message):
         for chan in guild.channels:
             if chan.name == target_channel:
                 posts = await chan.history().flatten()
-                senders = []
+                posters = []
                 for post in posts:
                     if post.attachments:
-                        senders.append(post.author)
-                leset = set(senders)
+                        posters.append(post.author)
+                leset = set(posters)
                 senders = list(leset)
                 senders.reverse()
                 for i, member in enumerate(senders):
@@ -64,8 +64,9 @@ async def on_message(message):
                 msg = "The FNM Arena codes have been sent out!"
                 await chan.send(msg)
                 print(fnm_codes)
-                print(senders)
+                print(posters)
                 print(leset)
+                print(senders)
                 break
                 
 client.run(TOKEN)
