@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 client = discord.Client()
-command = "!fnm-code-bot-deploy"
 
 @client.event
 async def on_ready():
@@ -19,6 +18,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
+    command = "!fnm-code-bot-deploy"
     if message.content[:len(command)] == command:
         await message.channel.send("Roger, roger!")
         
