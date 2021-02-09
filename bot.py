@@ -43,14 +43,12 @@ async def on_message(message):
         for chan in guild.channels:
             if chan.name == target_channel:
                 posts = await chan.history().flatten()
+                posts.reverse()
                 posters = []
                 for post in posts:
-                    if post.attachments:
+                    if post.attachments and post.author not in posters:
                         posters.append(post.author)
-                leset = set(posters)
-                senders = list(leset)
-                senders.reverse()
-                for i, member in enumerate(senders):
+                for i, member in enumerate(posters):
                     if i >= len(fnm_codes):
                         msg = "Ran out of codes for " + member.name + "!"
                         await message.channel.send(msg)
@@ -65,8 +63,6 @@ async def on_message(message):
                 await chan.send(msg)
                 print(fnm_codes)
                 print(posters)
-                print(leset)
-                print(senders)
                 break
                 
 client.run(TOKEN)
