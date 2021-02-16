@@ -8,7 +8,7 @@ Command the bot by sending it a private message as detailed below.
 
 
 # usage
-!fnm-code-bot-deploy  
+**!fnm-code-bot-deploy**  
 **<guild_id>** ... the target guild (server id) \*  
 **<channel_name>** ... the given channel name  
 **<code_1>**  
