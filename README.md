@@ -9,11 +9,11 @@ Command the bot by sending it a private message as detailed below.
 
 # usage
 !fnm-code-bot-deploy  
-<guild_id> ... the target guild (server id) \*  
-<channel_name> ... the given channel name  
-<code_1>  
+**<guild_id>** ... the target guild (server id) \*  
+**<channel_name>** ... the given channel name  
+**<code_1>  
 <code_2>  
-<code_3>  
+<code_3>  **
 ...  
 
 
@@ -21,7 +21,7 @@ Command the bot by sending it a private message as detailed below.
 
 
 # example
-!fnm-code-bot-deploy  
+**!fnm-code-bot-deploy  
 691942331091517530  
 fnm-29-1  
 CD93F-8646D-6F115-963D0-09D89  
@@ -37,4 +37,4 @@ CD9A3-C5F19-2336B-EEA0A-BE1D0
 CD9B6-30C5F-1BE64-958F6-746BB  
 CD9C4-6349B-B5800-748F2-0A711  
 CD9CA-AFB94-67B88-85CBA-50D1A  
-CD9D0-74340-A3AD9-872DB-10F80  
+CD9D0-74340-A3AD9-872DB-10F80  **
