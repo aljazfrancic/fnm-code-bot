@@ -9,15 +9,15 @@ Command the bot by sending it a private message as detailed below.
 
 # usage
 **!fnm-code-bot-deploy**  
-**<guild_id>** ... the target guild (server id) \*  
-**<channel_name>** ... the given channel name  
+**<guild_id>** *... the target guild (server id) \**  
+**<channel_name>** *... the given channel name*  
 **<code_1>**  
 **<code_2>**  
 **<code_3>**  
-...  
+*...*  
 
 
-\* can be copied by right-clicking the server icon in Discord if Developer Mode is enabled (User Settings > Appearance > Advanced)  
+*\* can be copied by right-clicking the server icon in Discord if Developer Mode is enabled (User Settings > Appearance > Advanced)*  
 
 
 # example
