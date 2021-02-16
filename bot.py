@@ -52,17 +52,17 @@ async def on_message(message):
                     if i >= len(fnm_codes):
                         msg = "Ran out of codes for " + member.name + "!"
                         await message.channel.send(msg)
-                        print(msg)
+                        #print(msg)
                     else:
                         await member.create_dm()
                         await member.dm_channel.send("`" + fnm_codes[i] + "`")
                         msg = "Code `" + fnm_codes[i] + "` sent to " + member.name + "!"
                         await message.channel.send(msg)
-                        print(msg)
+                        #print(msg)
                 msg = "The FNM Arena codes have been sent out!"
                 await chan.send(msg)
-                print(fnm_codes)
-                print(posters)
+                #print(fnm_codes)
+                #print(posters)
                 break
                 
 client.run(TOKEN)
